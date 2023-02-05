@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native'
 import {AntDesign,FontAwesome5,
   Feather
 } from '@expo/vector-icons';
-
+import FeatureRow from '../components/FeatureRow';
 
 const HomeScreen = () => {
   const navigation = useNavigation()
@@ -65,6 +65,21 @@ contentContainerStyle={{
 
 
 {/* feature Row */}
+<FeatureRow
+id="12"
+title="asds"
+description="asdsad"
+/>
+<FeatureRow
+id="12"
+title="asds"
+description="asdsad"
+/>
+<FeatureRow
+id="12"
+title="asds"
+description="asdsad"
+/>
 </ScrollView>
 
     </SafeAreaView>
