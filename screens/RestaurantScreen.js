@@ -67,10 +67,19 @@ NearBy. {address}
             </Text>  
 </View>
 
-<TouchableOpacity className="flex-row items-center space-x-2">
+<TouchableOpacity className="flex-row
 
-<MaterialCommunityIcons name="chat-question" size={20} color="black" />
+items-center space-x-2 p-4 border-y
+border-gray-300
+"
+
+>
+
+<MaterialCommunityIcons name="chat-question" size={20} color="gray" />
+<Text>
+</Text>
 </TouchableOpacity>
+
 </View>
     </ScrollView>
   )
