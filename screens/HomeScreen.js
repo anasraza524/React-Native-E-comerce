@@ -58,7 +58,7 @@ keyboardType="default"
 <ScrollView className="bg-gray-100"
 
 contentContainerStyle={{
-  paddingBottom:100,
+  paddingBottom:150,
 }}>
 {/* categories Scroll */}
 <Categories/>

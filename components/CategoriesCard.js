@@ -7,9 +7,9 @@ const CategoriesCard = ({ImageUrl,title}) => {
     <TouchableOpacity className="relative mr-2">
         <Image
         source={{
-            uri:ImageUrl
+            uri:"https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
         }}
-        className="h-20 w-20 rounded  "
+        className="h-20 w-20 rounded"
         />
       <Text
       className="absolute bottom-1 left-1 text-white font-bold"
