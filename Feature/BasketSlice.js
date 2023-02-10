@@ -15,14 +15,15 @@ export const BasketSlice = createSlice({
     },
     removeFromBasket: (state,action) => {
       const index  = state.items.findIndex(
-        (items)=>items.id === action.payload.id)
+        (item)=> item.id === action.payload.id);
         let newBasket =[...state.items]
-        if(index >=0){
+        console.log("asdsa",index)
+        if(index >= 0){
 newBasket.splice(index,1)
         }
         else{
           console.warn(
-            `Cant remove food id :${action.payload.id} from buskit` 
+            `Cant remove food id :${action.payload.id} from basket` 
           )
         }
         state.items= newBasket;

@@ -13,11 +13,13 @@ dispatch(addToBasket({id, name,description,price,image}))
    }
  
 console.log(items)
+
    const RemoveItemsFromBasket = () => { 
     if(!items.length > 0) return
 
 dispatch(removeFromBasket({id}))
     }
+    
  return (
 
 <> 
