@@ -36,9 +36,8 @@ export const {addToBasket,RemoveFromBasket  } = BasketSlice.actions
 
 export const SelectBasketItems = (state)=>state.Basket.items;
 export const SelectBasketItemsWithId =(state,id)=>{
-  state.Basket.items.filter((items)=>{
-    items.id === id 
-  }) 
+  state.Basket.items.filter((item)=>  item.id === id 
+  ) 
 } 
 export const SelectBasketTotal  = (state)=>state.Basket.items.reduce((total,item)=>
 total += item.price,0

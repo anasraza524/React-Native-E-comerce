@@ -7,16 +7,17 @@ const DishesRow = ({id, name,description,price,image}) => {
  const [isPressed, setIsPressed] = useState(false)
   const dispatch = useDispatch()
   const items = useSelector((state)=>SelectBasketItemsWithId(state,id))
- const AddItemsInBasket = () => { 
+//  const AddItemsInBasket = () => { 
 
-dispatch(addToBasket({id, name,description,price,image}))
-   }
+// dispatch(addToBasket({id, name,description,price,image}))
+//    }
  
 
-   const RemoveItemsFromBasket = () => { 
-    if(items.length > 0) return
-dispatch(removeFromBasket({id}))
-    }
+//    const RemoveItemsFromBasket = () => { 
+//     if(!items.length > 0) return
+
+// dispatch(removeFromBasket({id}))
+//     }
  return (
 
 <> 
@@ -54,20 +55,20 @@ dispatch(removeFromBasket({id}))
       <View className="bg-white px-4">
         <View className="flex-row items-center space-x-2 pb-3">
         <TouchableOpacity
-        onPress={AddItemsInBasket}
+        // onPress={AddItemsInBasket}
         >   
         <AntDesign name="pluscircle" size={20} color="green" />
            </TouchableOpacity>
            <Text>
-            {items.length}
+            {/* {items.length} */}
            </Text>
            <TouchableOpacity
-           onPress={RemoveItemsFromBasket}
-           disabled={!items.length}
+          //  onPress={RemoveItemsFromBasket}
+          //  disabled={!items.length}
            >   
         <AntDesign name="minuscircle" size={20} 
         
-        color={items.length > 0?"green":"gray"}
+        // color={items.length > 0?"green":"gray"}
          />
            </TouchableOpacity>
         </View>
