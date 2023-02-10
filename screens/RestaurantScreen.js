@@ -93,35 +93,35 @@ NearBy. {address}
  id="1111"
  name="asdasd"
  description="asdasd"
- price="1200"
+ price={1200}
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
  id="2222"
  name="asdasd"
  description="asdasd"
- price="1200"
+ price={1200}
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
  id="3333"
  name="asdasd"
  description="asdasd"
- price="1200"
+ price={1200}
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
  id="4444"
  name="asdasd"
  description="asdasd"
- price="1200"
+ price={1200}
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
  id="5555"
  name="asdasd"
  description="asdasd"
- price="1200"
+ price={1200}
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 </View>

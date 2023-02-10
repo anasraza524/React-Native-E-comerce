@@ -12,7 +12,7 @@ const DishesRow = ({id, name,description,price,image}) => {
 dispatch(addToBasket({id, name,description,price,image}))
    }
  
-
+console.log(items)
    const RemoveItemsFromBasket = () => { 
     if(!items.length > 0) return
 
@@ -60,15 +60,16 @@ dispatch(removeFromBasket({id}))
         <AntDesign name="pluscircle" size={20} color="green" />
            </TouchableOpacity>
            <Text>
-            {/* {items.length} */}
+            {items.length}
+       
            </Text>
            <TouchableOpacity
          onPress={RemoveItemsFromBasket}
-          //  disabled={!items.length}
+          disabled={!items.length}
            >   
         <AntDesign name="minuscircle" size={20} 
         
-        // color={items.length > 0?"green":"gray"}
+       color={items.length > 0?"green":"gray"}
          />
            </TouchableOpacity>
         </View>
