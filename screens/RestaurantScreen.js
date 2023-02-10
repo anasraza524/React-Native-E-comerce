@@ -90,35 +90,35 @@ NearBy. {address}
     Menu
 </Text >
 <DishesRow
- id="asaaaa1"
+ id="1111"
  name="asdasd"
  description="asdasd"
  price="1200"
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
- id="asaaaa2"
+ id="2222"
  name="asdasd"
  description="asdasd"
  price="1200"
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
- id="asaaaa3"
+ id="3333"
  name="asdasd"
  description="asdasd"
  price="1200"
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
- id="asaaaa4"
+ id="4444"
  name="asdasd"
  description="asdasd"
  price="1200"
  image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
 />
 <DishesRow
- id="asaaaa5"
+ id="5555"
  name="asdasd"
  description="asdasd"
  price="1200"
