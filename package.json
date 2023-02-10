@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.14",
     "@react-navigation/native": "^6.1.2",
     "@react-navigation/native-stack": "^6.9.8",
+    "@reduxjs/toolkit": "^1.9.2",
     "expo": "~47.0.12",
     "expo-status-bar": "~1.4.2",
     "nativewind": "^2.0.11",
@@ -25,6 +26,7 @@
     "react-native-svg": "^13.8.0",
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "~0.18.9",
+    "react-redux": "^8.0.5",
     "tailwindcss-react-native": "^1.7.10"
   },
   "devDependencies": {

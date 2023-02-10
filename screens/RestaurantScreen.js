@@ -2,9 +2,10 @@ import { View, Text,SafeAreaView,
     Image,TouchableOpacity
     ,TextInput,ScrollView } from 'react-native'
     import { AntDesign,Ionicons ,FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons'; 
-    
+    import DishesRow from '../components/DishesRow';
 import { useNavigation, useRoute } from '@react-navigation/native'
 import React ,{useLayoutEffect} from 'react'
+import BasketIcon from '../components/BasketIcon';
 const RestaurantScreen = () => {
 
 const navigation = useNavigation()
@@ -20,6 +21,8 @@ const navigation = useNavigation()
         })
     }, [])
   return (
+    <>
+    <BasketIcon/>
     <ScrollView>
 <View>
     <Image
@@ -67,21 +70,62 @@ NearBy. {address}
             </Text>  
 </View>
 
-<TouchableOpacity className="flex-row
 
-items-center space-x-2 p-4 border-y
-border-gray-300
-"
+{/* DishesRow  */}
 
->
-
-<MaterialCommunityIcons name="chat-question" size={20} color="gray" />
-<Text>
-</Text>
-</TouchableOpacity>
-
+{/* {dishes.map((dishes)=>{
+    <DishesRow
+    key={dishes._id}
+    id={dishes._id}
+    name={dishes.name}
+    description={dishes.description}
+    price={dishes.price}
+    image={dishes.image}
+    />
+})
+} */}
+</View >
+<View className="pb-30">
+<Text className="m-2 text-lg font-bold">
+    Menu
+</Text >
+<DishesRow
+ id="asaaaa1"
+ name="asdasd"
+ description="asdasd"
+ price="1200"
+ image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
+/>
+<DishesRow
+ id="asaaaa2"
+ name="asdasd"
+ description="asdasd"
+ price="1200"
+ image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
+/>
+<DishesRow
+ id="asaaaa3"
+ name="asdasd"
+ description="asdasd"
+ price="1200"
+ image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
+/>
+<DishesRow
+ id="asaaaa4"
+ name="asdasd"
+ description="asdasd"
+ price="1200"
+ image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
+/>
+<DishesRow
+ id="asaaaa5"
+ name="asdasd"
+ description="asdasd"
+ price="1200"
+ image="https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg"
+/>
 </View>
-    </ScrollView>
+    </ScrollView></>
   )
 }
 
